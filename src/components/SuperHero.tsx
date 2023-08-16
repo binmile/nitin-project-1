@@ -1,15 +1,17 @@
 import React from 'react';
+import {type HeroPropsType} from './props.d';
 
-type PropsType = {
-	name: string;
-	lastName: string;
-	powers: string;
-};
-
-export const SuperHero = function (props: PropsType) {
+export const SuperHero = function (props: HeroPropsType) {
 	return (
 		<div>
-			my name is {props.name} {props.lastName} and my powers is {props.powers}
+			<p>
+				my name is
+				<b>
+					{props.name} {props.lastName}
+				</b>
+					and my powers is <b>{props.powers}</b>
+
+			</p>
 
 		</div>
 	);
