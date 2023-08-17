@@ -1,15 +1,15 @@
 import React from 'react';
 import {type HeroPropsType} from './props.d';
 
-export const SuperHero = function (props: HeroPropsType) {
+export const SuperHero = function ({name, lastName, powers}: HeroPropsType) {
 	return (
 		<div>
 			<p>
 				my name is
 				<b>
-					{props.name} {props.lastName}
+					{name} {lastName}
 				</b>
-					and my powers is <b>{props.powers}</b>
+					and my powers is <b>{powers}</b>
 
 			</p>
 
