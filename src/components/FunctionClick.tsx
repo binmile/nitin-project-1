@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const FunctionClick = function () {
+export const FunctionClick: React.FC = function () {
 	function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
 		console.log('this is function event handler', e);
 	}
