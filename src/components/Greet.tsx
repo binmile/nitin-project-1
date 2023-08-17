@@ -1,3 +1,3 @@
 import React from 'react';
 
-export const Greet = () => <div> Hello I am Nitin</div>;
+export const Greet: React.FC = () => <div> Hello I am Nitin</div>;
