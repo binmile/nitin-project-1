@@ -2,7 +2,7 @@
 import React from 'react';
 const userContext = React.createContext<string>('2');
 
-export const UserProvider = userContext.Provider;
+export const UserProvider: React.Provider<string> = userContext.Provider;
 
-export const UserConsumer = userContext.Consumer;
+export const UserConsumer: React.Consumer<string> = userContext.Consumer;
 
