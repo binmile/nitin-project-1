@@ -1,9 +1,14 @@
 import React from 'react';
 import Welcome from './components/Welcome';
+import {UserProvider} from './components/userContext';
+import ChildComponent from './components/ChildComponent';
 
 function App() {
 	return <div className='app'>
-		<Welcome/>
+		<UserProvider value={'Nitin kukreti'}>
+			<Welcome/>
+			<ChildComponent/>
+		</UserProvider>
 	</div>;
 }
 
