@@ -1,9 +1,12 @@
 import React from 'react';
-import Welcome from './components/Welcome';
+import {ThemeContext} from './common/ThemeContext';
+import {ThemeChangingComponent} from './components/ThemeChangingComponent';
 
 function App() {
 	return <div className='app'>
-		<Welcome/>
+		<ThemeContext >
+			<ThemeChangingComponent/>
+		</ThemeContext>
 	</div>;
 }
 
