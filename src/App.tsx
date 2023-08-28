@@ -1,10 +1,14 @@
 import React from 'react';
-import Welcome from './components/Welcome';
+import Welcome from './common/Welcome';
+import {RouteManager} from './routes/RouteManager';
+import {BrowserRouter} from 'react-router-dom';
 
 function App() {
-	return <div className='app'>
-		<Welcome/>
-	</div>;
+	return (
+		<BrowserRouter>
+			<RouteManager />
+		</BrowserRouter>
+	);
 }
 
 export default App;
