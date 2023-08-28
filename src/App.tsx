@@ -1,11 +1,11 @@
 import React from 'react';
 import Welcome from './components/Welcome';
-import { Fibonacci } from './components/Fibonacci';
+import {FibonacciComponent} from './components/FibonacciComponent/FibonacciComponent';
 
 function App() {
 	return <div className='app'>
 		<Welcome/>
-		<Fibonacci/>
+		<FibonacciComponent/>
 	</div>;
 }
 
