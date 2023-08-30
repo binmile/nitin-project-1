@@ -1,3 +1,6 @@
+export type ParentType = {
+	name: string;
+};
 export type LifecycleState = {
 	count: number;
 };
