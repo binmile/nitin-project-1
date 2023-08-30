@@ -1,6 +1,7 @@
-import React, {type ChangeEvent, Component, type FormEventHandler} from 'react';
+import React, {type ChangeEvent, Component} from 'react';
 import {type PostType} from '../models/post.interface';
-import {Post} from '../api/api';
+import {PostApi} from '../api/PostApi';
+
 class PostForm extends Component<any, PostType> {
 	constructor(props: any) {
 		super(props);
@@ -15,7 +16,7 @@ class PostForm extends Component<any, PostType> {
 
 	handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
-		Post.createPost(this.state).then(post => {
+		PostApi.createPost(this.state).then(post => {
 			console.log(post);
 		}).catch(err => {
 			console.log(err);
