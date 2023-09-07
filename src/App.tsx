@@ -1,18 +1,10 @@
 import React from 'react';
-import Welcome from './components/Welcome';
-import ButtonClickCounter from './components/ButtonClickCounter';
-import HoverCounter from './components/HoverCounter';
-import {PortalComponent} from './components/PortalComponent';
+import {Hello} from './components/Hello';
 
 function App() {
-	return (
-		<div className='app'>
-			<Welcome />
-			<ButtonClickCounter />
-			<HoverCounter />
-			<PortalComponent />
-		</div>
-	);
+	return <div className='app'>
+		<Hello/>
+	</div>;
 }
 
 export default App;
