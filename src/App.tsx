@@ -1,18 +1,13 @@
 import React from 'react';
-import Welcome from './components/Welcome';
-import ButtonClickCounter from './components/ButtonClickCounter';
-import HoverCounter from './components/HoverCounter';
-import {PortalComponent} from './components/PortalComponent';
+import {ThemeContext} from './common/ThemeContext';
+import {ThemeChangingComponent} from './components/ThemeChangingComponent';
 
 function App() {
-	return (
-		<div className='app'>
-			<Welcome />
-			<ButtonClickCounter />
-			<HoverCounter />
-			<PortalComponent />
-		</div>
-	);
+	return <div className='app'>
+		<ThemeContext >
+			<ThemeChangingComponent/>
+		</ThemeContext>
+	</div>;
 }
 
 export default App;
