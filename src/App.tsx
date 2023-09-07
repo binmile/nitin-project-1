@@ -1,5 +1,4 @@
 import React from 'react';
-import Welcome from './common/Welcome';
 import {RouteManager} from './routes/RouteManager';
 import {BrowserRouter} from 'react-router-dom';
 
