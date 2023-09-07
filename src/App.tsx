@@ -1,17 +1,12 @@
 import React from 'react';
-import Welcome from './components/Welcome';
-import ButtonClickCounter from './components/ButtonClickCounter';
-import HoverCounter from './components/HoverCounter';
-import {PortalComponent} from './components/PortalComponent';
+import {RouteManager} from './routes/RouteManager';
+import {BrowserRouter} from 'react-router-dom';
 
 function App() {
 	return (
-		<div className='app'>
-			<Welcome />
-			<ButtonClickCounter />
-			<HoverCounter />
-			<PortalComponent />
-		</div>
+		<BrowserRouter>
+			<RouteManager />
+		</BrowserRouter>
 	);
 }
 
