@@ -1,18 +1,15 @@
 import React from 'react';
 import Welcome from './components/Welcome';
-import ButtonClickCounter from './components/ButtonClickCounter';
-import HoverCounter from './components/HoverCounter';
-import {PortalComponent} from './components/PortalComponent';
+import {UserProvider} from './components/userContext';
+import ChildComponent from './components/ChildComponent';
 
 function App() {
-	return (
-		<div className='app'>
-			<Welcome />
-			<ButtonClickCounter />
-			<HoverCounter />
-			<PortalComponent />
-		</div>
-	);
+	return <div className='app'>
+		<UserProvider value={'Nitin kukreti'}>
+			<Welcome/>
+			<ChildComponent/>
+		</UserProvider>
+	</div>;
 }
 
 export default App;
